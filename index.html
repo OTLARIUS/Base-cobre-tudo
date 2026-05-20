@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Base Cobre Tudo Love Rain — cobertura real, acabamento natural. Entrega em cidades selecionadas de São Paulo.">
+<title>Base Cobre Tudo | OTLARIUS</title>
+
+<!-- META PIXEL -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','1999700837648506');
+fbq('track','PageView');
+fbq('track','ViewContent');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1999700837648506&ev=PageView&noscript=1"/></noscript>
+
+<!-- TIKTOK PIXEL -->
+<script>
+!function(w,d,t){w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];
+ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"];
+ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};
+for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);
+ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e};
+ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";
+ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};
+var o=document.createElement("script");o.type="text/javascript",o.async=!0,o.src=i+"?sdkid="+e+"&lib="+t;
+var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)};
+ttq.load('D7S0EUJC77U4TIUPS04G');ttq.page();}(window,document,'ttq');
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#faf9f7;
+  --white:#ffffff;
+  --black:#111110;
+  --mid:#6b6860;
+  --light:#e8e5df;
+  --gold:#b8922a;
+  --gold-bg:#fdf6e8;
+  --font-d:'Playfair Display',serif;
+  --font-b:'DM Sans',sans-serif;
+  --max:500px;
+}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);
+  color:var(--black);
+  font-family:var(--font-b);
+  font-size:15px;
+  line-height:1.6;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{cursor:pointer;border:none;background:none;font-family:var(--font-b)}
+
+/* TIMER */
+.timer-bar{
+  background:var(--black);
+  color:#fff;
+  text-align:center;
+  padding:10px 16px;
+  font-size:12px;
+  font-weight:400;
+  letter-spacing:.03em;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+}
+.timer-digits{display:flex;align-items:center;gap:3px;font-weight:600;font-size:14px}
+.td{background:rgba(255,255,255,.12);padding:2px 7px;border-radius:4px;min-width:26px;text-align:center}
+.ts{opacity:.5}
+.cod-badge{color:#a8e6c0;font-weight:500}
+
+/* LOGO */
+.logo-wrap{padding:20px 24px 0;text-align:center}
+.logo{font-family:var(--font-d);font-size:13px;font-weight:400;letter-spacing:.35em;color:var(--mid);text-transform:uppercase}
+
+/* SOCIAL STRIP */
+.social-strip{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:20px;
+  padding:14px 24px;
+  flex-wrap:wrap;
+  border-bottom:1px solid var(--light);
+  max-width:var(--max);
+  margin:8px auto 0;
+}
+.ss-item{font-size:11.5px;color:var(--mid);display:flex;align-items:center;gap:5px;font-weight:400}
+.ss-item b{color:var(--black);font-weight:500}
+
+/* HERO */
+.hero{
+  padding:28px 24px 40px;
+  max-width:var(--max);
+  margin:0 auto;
+  text-align:center;
+}
+.product-img{
+  width:100%;
+  max-width:320px;
+  margin:0 auto 24px;
+  border-radius:16px;
+  overflow:hidden;
+}
+.product-img img{width:100%;height:auto;border-radius:16px;display:block}
+
+.hero h1{
+  font-family:var(--font-d);
+  font-size:clamp(30px,8vw,44px);
+  font-weight:600;
+  line-height:1.2;
+  margin-bottom:12px;
+}
+.hero h1 em{font-style:italic;color:var(--gold)}
+.hero-sub{
+  font-size:15px;
+  color:var(--mid);
+  font-weight:300;
+  max-width:360px;
+  margin:0 auto 20px;
+  line-height:1.75;
+}
+.delivery-badge{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  background:var(--gold-bg);
+  border:1px solid rgba(184,146,42,.22);
+  color:var(--gold);
+  font-size:12px;
+  font-weight:500;
+  padding:7px 14px;
+  border-radius:20px;
+  margin-bottom:24px;
+}
+.btn-main{
+  display:block;
+  width:100%;
+  max-width:360px;
+  margin:0 auto;
+  background:var(--black);
+  color:#fff;
+  font-size:14px;
+  font-weight:500;
+  letter-spacing:.07em;
+  text-transform:uppercase;
+  padding:17px 24px;
+  border-radius:4px;
+  text-align:center;
+  transition:opacity .15s;
+  line-height:1.4;
+}
+.btn-main:active{opacity:.82}
+.btn-main small{display:block;font-size:10px;opacity:.55;font-weight:400;letter-spacing:.03em;margin-top:3px;text-transform:none}
+.btn-outline{
+  display:block;width:100%;max-width:360px;margin:0 auto;
+  background:transparent;color:var(--black);font-size:13px;font-weight:500;
+  letter-spacing:.06em;text-transform:uppercase;padding:15px 24px;
+  border-radius:4px;border:1.5px solid var(--black);text-align:center;transition:opacity .15s;
+}
+.btn-outline:active{opacity:.7}
+
+/* DIVIDER */
+.divider{height:1px;background:var(--light);margin:0 auto;max-width:calc(var(--max) - 48px)}
+
+/* ANTES/DEPOIS */
+.ad-section{padding:48px 24px;max-width:var(--max);margin:0 auto}
+.section-label{font-size:10px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--mid);display:block;margin-bottom:10px}
+.section-title{font-family:var(--font-d);font-size:clamp(24px,6vw,36px);font-weight:600;line-height:1.25;margin-bottom:8px}
+.section-title em{font-style:italic;color:var(--gold)}
+.section-body{font-size:14px;color:var(--mid);font-weight:300;line-height:1.75;margin-bottom:24px}
+
+.ad-img{
+  width:100%;
+  border-radius:12px;
+  overflow:hidden;
+  margin-bottom:16px;
+}
+.ad-img img{width:100%;height:auto;display:block;border-radius:12px}
+
+/* VÍDEOS */
+.videos{display:flex;flex-direction:column;gap:16px}
+.vid-wrap{
+  width:100%;
+  border-radius:12px;
+  overflow:hidden;
+  background:#000;
+}
+.vid-wrap video{
+  width:100%;
+  display:block;
+  border-radius:12px;
+  max-height:480px;
+  object-fit:cover;
+}
+.vid-caption{font-size:11px;color:var(--mid);text-align:center;margin-top:6px;font-style:italic}
+
+/* TONALIDADES */
+.ton-section{padding:48px 24px;max-width:var(--max);margin:0 auto}
+.ton-img{width:100%;border-radius:12px;overflow:hidden}
+.ton-img img{width:100%;height:auto;display:block;border-radius:12px}
+.ton-note{
+  margin-top:12px;
+  font-size:12.5px;
+  color:var(--mid);
+  font-weight:300;
+  line-height:1.65;
+  text-align:center;
+}
+
+/* PRODUTO KIT */
+.kit-img-wrap{
+  width:100%;
+  max-width:340px;
+  margin:0 auto 28px;
+  border-radius:14px;
+  overflow:hidden;
+}
+.kit-img-wrap img{width:100%;height:auto;display:block;border-radius:14px}
+
+/* KITS */
+.kits-section{padding:48px 24px;max-width:var(--max);margin:0 auto}
+.kits{display:flex;flex-direction:column;gap:12px}
+.kit{
+  background:var(--white);
+  border:1.5px solid var(--light);
+  border-radius:8px;
+  padding:20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  position:relative;
+}
+.kit.featured{border-color:var(--black)}
+.kit-tag{
+  position:absolute;top:-10px;left:16px;
+  background:var(--black);color:#fff;
+  font-size:9px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;
+  padding:3px 10px;border-radius:20px;
+}
+.kit-qty{font-size:11px;color:var(--mid);margin-bottom:2px}
+.kit-name{font-family:var(--font-d);font-size:18px;font-weight:600;margin-bottom:4px}
+.price-row{display:flex;align-items:baseline;gap:8px}
+.price-old{font-size:12px;color:var(--mid);text-decoration:line-through}
+.price{font-size:22px;font-weight:500}
+.kit-btn{
+  background:var(--black);color:#fff;font-size:11px;font-weight:500;
+  letter-spacing:.08em;text-transform:uppercase;padding:11px 16px;
+  border-radius:4px;white-space:nowrap;flex-shrink:0;transition:opacity .15s;
+}
+.kit.featured .kit-btn{background:var(--gold)}
+.kit-btn:active{opacity:.8}
+
+/* FEATURES */
+.features-section{padding:48px 24px;max-width:var(--max);margin:0 auto}
+.features{display:flex;flex-direction:column;gap:20px}
+.feature{display:flex;gap:16px;align-items:flex-start}
+.feature-icon{
+  width:40px;height:40px;background:var(--white);border:1px solid var(--light);
+  border-radius:8px;display:flex;align-items:center;justify-content:center;
+  font-size:18px;flex-shrink:0;
+}
+.feature-text h3{font-size:14px;font-weight:500;margin-bottom:3px}
+.feature-text p{font-size:13px;color:var(--mid);font-weight:300;line-height:1.6}
+
+/* COMO USAR */
+.steps-section{padding:48px 24px;max-width:var(--max);margin:0 auto}
+.steps{display:flex;flex-direction:column}
+.step{display:flex;gap:16px;padding:18px 0;border-bottom:1px solid var(--light);align-items:flex-start}
+.step:last-child{border-bottom:none}
+.step-num{font-family:var(--font-d);font-size:28px;font-weight:400;color:var(--light);line-height:1;flex-shrink:0;width:32px}
+.step h3{font-size:14px;font-weight:500;margin-bottom:3px}
+.step p{font-size:13px;color:var(--mid);font-weight:300;line-height:1.6}
+
+/* ENTREGA */
+.delivery-section{padding:48px 24px;max-width:var(--max);margin:0 auto}
+.delivery-box{background:var(--white);border:1px solid var(--light);border-radius:8px;padding:24px}
+.delivery-box h3{font-family:var(--font-d);font-size:20px;font-weight:600;margin-bottom:10px}
+.delivery-box p{font-size:13px;color:var(--mid);font-weight:300;line-height:1.7;margin-bottom:12px}
+.check-link{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:500;border-bottom:1px solid var(--black);padding-bottom:1px}
+
+/* FAQ */
+.faq-section{padding:48px 24px;max-width:var(--max);margin:0 auto}
+.faq{display:flex;flex-direction:column}
+.faq-item{border-bottom:1px solid var(--light)}
+.faq-item:first-child{border-top:1px solid var(--light)}
+.faq-q{
+  width:100%;display:flex;justify-content:space-between;align-items:center;
+  padding:17px 0;font-size:14px;font-weight:400;color:var(--black);
+  text-align:left;gap:12px;background:none;border:none;font-family:var(--font-b);cursor:pointer;
+}
+.faq-arrow{font-size:13px;color:var(--mid);transition:transform .25s;flex-shrink:0}
+.faq-item.open .faq-arrow{transform:rotate(180deg)}
+.faq-a{
+  max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s ease;
+  font-size:13px;color:var(--mid);font-weight:300;line-height:1.75;padding:0;
+}
+.faq-item.open .faq-a{max-height:220px;padding-bottom:17px}
+
+/* CTA FINAL */
+.final{padding:52px 24px 56px;max-width:var(--max);margin:0 auto;text-align:center}
+.final h2{font-family:var(--font-d);font-size:clamp(26px,7vw,38px);font-weight:600;line-height:1.25;margin-bottom:10px}
+.final h2 em{font-style:italic;color:var(--gold)}
+.final p{font-size:14px;color:var(--mid);font-weight:300;margin-bottom:28px;line-height:1.7}
+
+/* TRUST */
+.trust-row{
+  display:flex;justify-content:center;flex-wrap:wrap;gap:14px;
+  padding:0 24px 48px;max-width:var(--max);margin:0 auto;
+}
+.trust-item{display:flex;align-items:center;gap:5px;font-size:11.5px;color:var(--mid)}
+
+/* FOOTER */
+footer{background:var(--black);padding:32px 24px;text-align:center}
+.footer-logo{font-family:var(--font-d);font-size:13px;font-weight:400;letter-spacing:.3em;color:rgba(255,255,255,.35);text-transform:uppercase;margin-bottom:14px}
+.footer-wa{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:rgba(255,255,255,.45);margin-bottom:14px}
+footer p{font-size:10px;color:rgba(255,255,255,.2);line-height:1.8;max-width:420px;margin:0 auto}
+
+/* WA FLOAT */
+.wa-float{
+  position:fixed;bottom:20px;right:20px;width:50px;height:50px;
+  background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  box-shadow:0 4px 16px rgba(37,211,102,.35);z-index:9999;transition:transform .2s;
+}
+.wa-float:active{transform:scale(.93)}
+.wa-float svg{width:26px;height:26px;fill:#fff}
+
+/* FADE */
+.fade{opacity:0;transform:translateY(14px);transition:opacity .55s,transform .55s}
+.fade.in{opacity:1;transform:translateY(0)}
+</style>
+</head>
+<body>
+
+<!-- TIMER -->
+<div class="timer-bar">
+  <span>Preço especial acaba em</span>
+  <div class="timer-digits">
+    <span class="td" id="tH">04</span><span class="ts">:</span>
+    <span class="td" id="tM">00</span><span class="ts">:</span>
+    <span class="td" id="tS">00</span>
+  </div>
+  <span class="cod-badge">· Pague só na entrega</span>
+</div>
+
+<!-- LOGO -->
+<div class="logo-wrap"><span class="logo">Otlarius</span></div>
+
+<!-- SOCIAL STRIP -->
+<div class="social-strip fade">
+  <div class="ss-item">⭐ <b>4.8</b> de avaliação</div>
+  <div class="ss-item">📍 Entregas em <b>SP</b></div>
+  <div class="ss-item">💬 Suporte via <b>WhatsApp</b></div>
+</div>
+
+<!-- HERO -->
+<section class="hero fade">
+  <div class="product-img">
+    <img src="produto-hero.jpg" alt="Base Cobre Tudo Love Rain sendo segura — Base Mate, longa duração, resistente à água">
+  </div>
+
+  <h1>Cobertura real.<br><em>Pele uniforme.</em></h1>
+  <p class="hero-sub">Base Mate Love Rain — cobre manchas, melasma, olheiras e imperfeições. Longa duração, resistente à água e ao suor.</p>
+
+  <div class="delivery-badge">
+    📍 Entregamos em cidades selecionadas de São Paulo
+  </div>
+
+  <a class="btn-main"
+     href="https://entrega.logzz.com.br/pay/memdkodvm/2-por-179---todas-as-cores"
+     onclick="co(2)">
+    Quero minha base agora
+    <small>Kit duplo · R$179 · Pague só na entrega</small>
+  </a>
+</section>
+
+<div class="divider"></div>
+
+<!-- ANTES E DEPOIS — imagem real -->
+<section class="ad-section fade">
+  <span class="section-label">Resultado real</span>
+  <h2 class="section-title">Antes e <em>depois</em></h2>
+  <p class="section-body">Resultado de uma cliente real usando a Base Cobre Tudo Love Rain. Sem filtro, sem edição exagerada.</p>
+
+  <div class="ad-img">
+    <img src="antes-depois.jpg" alt="Antes e depois — Base Cobre Tudo Love Rain cobrindo manchas e melasma">
+  </div>
+
+  <!-- VÍDEOS UGC -->
+  <div class="videos">
+    <div>
+      <div class="vid-wrap">
+        <video src="video-1.mp4" controls playsinline preload="none" poster="produto-hero.jpg"></video>
+      </div>
+      <p class="vid-caption">Aplicação real — antes e depois</p>
+    </div>
+    <div>
+      <div class="vid-wrap">
+        <video src="video-2.mp4" controls playsinline preload="none" poster="produto-kit.jpg"></video>
+      </div>
+      <p class="vid-caption">Resultado na pele — cobertura natural</p>
+    </div>
+    <div>
+      <div class="vid-wrap">
+        <video src="video-3.mp4" controls playsinline preload="none" poster="produto-hero.jpg"></video>
+      </div>
+      <p class="vid-caption">Veja como aplicar — resultado ao vivo</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- TONALIDADES -->
+<section class="ton-section fade">
+  <span class="section-label">Tonalidades</span>
+  <h2 class="section-title" style="margin-bottom:16px">6 tons para <em>toda pele</em></h2>
+
+  <div class="ton-img">
+    <img src="tonalidades.jpg" alt="Tonalidades disponíveis — 01 Muito Clara, 02 Clara, 03 Média Clara, 04 Morena Clara, 05 Morena, 06 Morena Escura">
+  </div>
+  <p class="ton-note">Você escolhe a sua tonalidade no momento do checkout — antes de finalizar o pedido.</p>
+</section>
+
+<div class="divider"></div>
+
+<!-- PRODUTO KIT FOTO 2 + KITS -->
+<section class="kits-section fade" id="kits">
+  <div class="kit-img-wrap">
+    <img src="produto-kit.jpg" alt="Kit Base Cobre Tudo Love Rain — várias tonalidades">
+  </div>
+
+  <span class="section-label">Escolha seu kit</span>
+  <h2 class="section-title" style="margin-bottom:8px">Kits e <em>preços</em></h2>
+  <p style="font-size:13px;color:var(--mid);font-weight:300;margin-bottom:24px;line-height:1.7">Tonalidade escolhida no checkout. Disponível em 6 tons.</p>
+
+  <div class="kits">
+
+    <div class="kit">
+      <div>
+        <div class="kit-qty">1 unidade · 30ml</div>
+        <div class="kit-name">Kit Essencial</div>
+        <div class="price-row">
+          <span class="price-old">R$147</span>
+          <span class="price">R$97</span>
+        </div>
+      </div>
+      <a class="kit-btn" href="https://entrega.logzz.com.br/pay/memdkodvm/1-por-97---todas-as-cores" onclick="co(1)">Comprar</a>
+    </div>
+
+    <div class="kit featured">
+      <div class="kit-tag">Mais pedido</div>
+      <div>
+        <div class="kit-qty">2 unidades · 30ml cada</div>
+        <div class="kit-name">Kit Duplo</div>
+        <div class="price-row">
+          <span class="price-old">R$294</span>
+          <span class="price">R$179</span>
+        </div>
+      </div>
+      <a class="kit-btn" href="https://entrega.logzz.com.br/pay/memdkodvm/2-por-179---todas-as-cores" onclick="co(2)">Comprar</a>
+    </div>
+
+    <div class="kit">
+      <div>
+        <div class="kit-qty">3 unidades · 30ml cada</div>
+        <div class="kit-name">Kit Família</div>
+        <div class="price-row">
+          <span class="price-old">R$441</span>
+          <span class="price">R$229</span>
+        </div>
+      </div>
+      <a class="kit-btn" href="https://entrega.logzz.com.br/pay/memdkodvm/3-por-229---todas-as-cores" onclick="co(3)">Comprar</a>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- O QUE FAZ -->
+<section class="features-section fade">
+  <span class="section-label">O produto</span>
+  <h2 class="section-title" style="margin-bottom:24px">O que você <em>ganha</em></h2>
+  <div class="features">
+    <div class="feature">
+      <div class="feature-icon">✦</div>
+      <div class="feature-text">
+        <h3>Alta cobertura real</h3>
+        <p>Cobre manchas, melasma, olheiras e imperfeições sem efeito máscara.</p>
+      </div>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">💧</div>
+      <div class="feature-text">
+        <h3>Resistente à água e suor</h3>
+        <p>Formulada para aguentar o dia — calor, trabalho, rotina intensa.</p>
+      </div>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">◎</div>
+      <div class="feature-text">
+        <h3>Acabamento natural</h3>
+        <p>Pele uniforme e com aparência tratada, não de maquiagem pesada.</p>
+      </div>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">💛</div>
+      <div class="feature-text">
+        <h3>Rende muito</h3>
+        <p>Uma gotinha já cobre o rosto inteiro. Não acompanha pincel, mas não precisa.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- COMO USAR -->
+<section class="steps-section fade">
+  <span class="section-label">Aplicação</span>
+  <h2 class="section-title" style="margin-bottom:24px">Como <em>usar</em></h2>
+  <div class="steps">
+    <div class="step">
+      <span class="step-num">01</span>
+      <div>
+        <h3>Prepare o rosto</h3>
+        <p>Higienize e hidrate antes de aplicar.</p>
+      </div>
+    </div>
+    <div class="step">
+      <span class="step-num">02</span>
+      <div>
+        <h3>Aplique com dedos ou esponja</h3>
+        <p>Uma gotinha já é suficiente para cobrir o rosto inteiro.</p>
+      </div>
+    </div>
+    <div class="step">
+      <span class="step-num">03</span>
+      <div>
+        <h3>Esfume bem</h3>
+        <p>Movimentos suaves do centro para as bordas até a pele ficar uniforme.</p>
+      </div>
+    </div>
+    <div class="step">
+      <span class="step-num">04</span>
+      <div>
+        <h3>Finalize</h3>
+        <p>Fixe com pó se preferir. Pronta — dura o dia sem retoques.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ENTREGA -->
+<section class="delivery-section fade">
+  <span class="section-label">Entrega</span>
+  <h2 class="section-title" style="margin-bottom:16px">Onde <em>entregamos</em></h2>
+  <div class="delivery-box">
+    <h3>Estado de São Paulo</h3>
+    <p>Fazemos entregas em cidades selecionadas do estado de São Paulo. Para confirmar se atendemos sua região, acesse o checkout — é rápido e sem compromisso.</p>
+    <p>Pagamento na entrega disponível nas regiões atendidas. PIX e cartão também aceitos.</p>
+    <a class="check-link" href="https://entrega.logzz.com.br/pay/memdkodvm/2-por-179---todas-as-cores" onclick="co(2)">
+      Verificar minha cidade →
+    </a>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- FAQ — perguntas reais do produto -->
+<section class="faq-section fade">
+  <span class="section-label">Dúvidas</span>
+  <h2 class="section-title" style="margin-bottom:24px">Perguntas <em>frequentes</em></h2>
+  <div class="faq">
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="openFaq(this)">
+        A base cobre melasma?
+        <span class="faq-arrow">▾</span>
+      </button>
+      <div class="faq-a">Sim. Ela possui alta cobertura e ajuda a disfarçar melasma, manchas, olheiras e imperfeições.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="openFaq(this)">
+        A base é à prova d'água?
+        <span class="faq-arrow">▾</span>
+      </button>
+      <div class="faq-a">Sim, possui boa resistência à água e ao suor — ideal para o dia a dia.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="openFaq(this)">
+        Quanto produto tem na embalagem?
+        <span class="faq-arrow">▾</span>
+      </button>
+      <div class="faq-a">30ml por unidade. Rende bastante — uma gotinha já é suficiente para cobrir o rosto inteiro.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="openFaq(this)">
+        Vem com pincel?
+        <span class="faq-arrow">▾</span>
+      </button>
+      <div class="faq-a">Não acompanha pincel, mas não precisa. Uma gotinha já cobre todo o rosto — você pode aplicar com os dedos ou esponja.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="openFaq(this)">
+        Como escolho minha tonalidade?
+        <span class="faq-arrow">▾</span>
+      </button>
+      <div class="faq-a">A tonalidade é escolhida no checkout, antes de finalizar o pedido. São 6 opções: Muito Clara, Clara, Média Clara, Morena Clara, Morena e Morena Escura.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="openFaq(this)">
+        Pode irritar a pele?
+        <span class="faq-arrow">▾</span>
+      </button>
+      <div class="faq-a">Absolutamente não. Porém, caso você tenha a pele muito sensível, assim como qualquer outro cosmético, é recomendado consultar um especialista para verificar possíveis alergias a substâncias específicas.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="openFaq(this)">
+        Como funciona o pagamento?
+        <span class="faq-arrow">▾</span>
+      </button>
+      <div class="faq-a">O pagamento é feito somente na entrega, nas regiões atendidas. PIX e cartão de crédito também estão disponíveis diretamente no checkout.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="openFaq(this)">
+        Entregam na minha cidade?
+        <span class="faq-arrow">▾</span>
+      </button>
+      <div class="faq-a">Entregamos em cidades selecionadas do estado de São Paulo. A forma mais rápida de confirmar é acessar o checkout — você vê a disponibilidade antes de finalizar.</div>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CTA FINAL -->
+<section class="final fade">
+  <h2>Sua rotina merece uma<br><em>cobertura melhor.</em></h2>
+  <p>Escolha seu kit, verifique se entregamos na sua cidade e finalize em menos de 2 minutos.</p>
+  <a class="btn-main" style="margin-bottom:12px"
+     href="https://entrega.logzz.com.br/pay/memdkodvm/2-por-179---todas-as-cores"
+     onclick="co(2)">
+    Ver kits
+    <small>2 unidades · R$179 · Pague só na entrega</small>
+  </a>
+  <a class="btn-outline" href="https://wa.me/5519987128880">
+    Tirar dúvidas no WhatsApp
+  </a>
+</section>
+
+<div class="trust-row fade">
+  <div class="trust-item">🔒 Compra segura</div>
+  <div class="trust-item">💳 PIX · Cartão · Entrega</div>
+  <div class="trust-item">📍 Cidades selecionadas · SP</div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Otlarius</div>
+  <a class="footer-wa" href="https://wa.me/5519987128880">💬 Suporte via WhatsApp</a>
+  <p>Entregamos em cidades selecionadas do estado de São Paulo. Verifique disponibilidade no checkout antes de finalizar. Este site é operado por um afiliado autorizado Logzz. Os resultados podem variar de pessoa para pessoa. © 2025 OTLARIUS.</p>
+</footer>
+
+<!-- WA FLOAT -->
+<a class="wa-float" href="https://wa.me/5519987128880" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+/* TIMER */
+(function(){
+  var K='otl_t2',D=4*60*60*1000;
+  var e=+localStorage.getItem(K);
+  if(!e||e<Date.now()){e=Date.now()+D;localStorage.setItem(K,e);}
+  function p(n){return String(n).padStart(2,'0')}
+  function tick(){
+    var d=e-Date.now();
+    if(d<=0){e=Date.now()+D;localStorage.setItem(K,e);d=D;}
+    document.getElementById('tH').textContent=p(Math.floor(d/3600000));
+    document.getElementById('tM').textContent=p(Math.floor((d%3600000)/60000));
+    document.getElementById('tS').textContent=p(Math.floor((d%60000)/1000));
+  }
+  tick();setInterval(tick,1000);
+})();
+
+/* PIXELS */
+function co(qty){
+  var p={1:97,2:179,3:229};
+  if(typeof fbq==='function')fbq('track','InitiateCheckout',{value:p[qty]||97,currency:'BRL',num_items:qty});
+  if(typeof ttq!=='undefined')ttq.track('InitiateCheckout',{value:p[qty]||97,currency:'BRL'});
+}
+
+/* FAQ */
+function openFaq(btn){
+  var item=btn.closest('.faq-item');
+  var isOpen=item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(function(el){el.classList.remove('open');});
+  if(!isOpen)item.classList.add('open');
+}
+
+/* FADE IN */
+document.querySelectorAll('.fade').forEach(function(el){
+  new IntersectionObserver(function(entries){
+    entries.forEach(function(e){if(e.isIntersecting)e.target.classList.add('in');});
+  },{threshold:.08}).observe(el);
+});
+</script>
+</body>
+</html>
