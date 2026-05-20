@@ -41,20 +41,10 @@ ttq.load('D7S0EUJC77U4TIUPS04G');ttq.page();}(window,document,'ttq');
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --bg:#faf9f7;
-  --cream:#f5f0ea;
-  --white:#fff;
-  --black:#111110;
-  --mid:#6b6860;
-  --light:#e8e5df;
-  --gold:#b8922a;
-  --gold-btn:#c9983a;
-  --gold-bg:#fdf6e8;
-  --green:#1a7a4a;
-  --green-bg:#f0faf4;
-  --font-d:'Playfair Display',serif;
-  --font-b:'DM Sans',sans-serif;
-  --max:500px;
+  --bg:#faf9f7;--cream:#f5f0ea;--white:#fff;--black:#111110;
+  --mid:#6b6860;--light:#e8e5df;--gold:#b8922a;--gold-btn:#c9983a;
+  --gold-bg:#fdf6e8;--green:#1a7a4a;--green-bg:#f0faf4;
+  --font-d:'Playfair Display',serif;--font-b:'DM Sans',sans-serif;--max:500px;
 }
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--black);font-family:var(--font-b);font-size:15px;line-height:1.6;overflow-x:hidden}
@@ -62,124 +52,74 @@ img{max-width:100%;display:block}
 a{color:inherit;text-decoration:none}
 button{cursor:pointer;border:none;background:none;font-family:var(--font-b)}
 
-/* ── TIMER ── */
-.timer-bar{
-  background:var(--black);color:#fff;padding:10px 16px;
-  font-size:12px;display:flex;align-items:center;justify-content:center;
-  gap:16px;flex-wrap:wrap;
-}
-.timer-left{display:flex;align-items:center;gap:6px;font-size:11px;color:rgba(255,255,255,.7)}
-.timer-left span{font-size:14px}
+/* TIMER */
+.timer-bar{background:var(--black);color:#fff;padding:10px 16px;font-size:12px;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap}
+.timer-left{display:flex;align-items:center;gap:5px;font-size:11px;color:rgba(255,255,255,.7)}
 .timer-digits{display:flex;align-items:flex-end;gap:4px}
 .td-wrap{display:flex;flex-direction:column;align-items:center;gap:1px}
 .td{background:rgba(255,255,255,.12);color:#fff;font-weight:700;font-size:20px;padding:3px 10px;border-radius:5px;min-width:38px;text-align:center;line-height:1.3;font-family:var(--font-d)}
 .td-label{font-size:8px;color:rgba(255,255,255,.5);letter-spacing:.1em;text-transform:uppercase}
 .ts{color:rgba(255,255,255,.4);font-size:18px;font-weight:300;padding-bottom:12px}
-.timer-right{display:flex;align-items:center;gap:6px;font-size:11px;font-weight:600;color:#a8e6c0;letter-spacing:.04em}
+.timer-right{font-size:11px;font-weight:600;color:#a8e6c0;letter-spacing:.04em}
 
-/* ── LOGO ── */
+/* LOGO */
 .logo-wrap{padding:16px 24px 0;text-align:center}
 .logo{font-family:var(--font-d);font-size:13px;font-weight:400;letter-spacing:.35em;color:var(--mid);text-transform:uppercase}
 
-/* ── SOCIAL STRIP ── */
-.social-strip{
-  display:flex;justify-content:center;align-items:center;gap:20px;
-  padding:11px 24px;flex-wrap:wrap;border-bottom:1px solid var(--light);
-  max-width:var(--max);margin:10px auto 0;
-}
+/* SOCIAL STRIP */
+.social-strip{display:flex;justify-content:center;align-items:center;gap:18px;padding:11px 24px;flex-wrap:wrap;border-bottom:1px solid var(--light);max-width:var(--max);margin:10px auto 0}
 .ss-item{font-size:11px;color:var(--mid);display:flex;align-items:center;gap:5px}
 .ss-item b{color:var(--black);font-weight:500}
 
-/* ── HERO ── */
+/* HERO */
 .hero{padding:20px 24px 36px;max-width:var(--max);margin:0 auto;text-align:center}
-
-.hero-eyebrow{
-  display:inline-block;font-size:10px;font-weight:600;letter-spacing:.2em;
-  text-transform:uppercase;color:var(--gold);border:1px solid rgba(184,146,42,.3);
-  padding:4px 14px;border-radius:20px;margin-bottom:16px;
-}
+.hero-eyebrow{display:inline-block;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(184,146,42,.3);padding:4px 14px;border-radius:20px;margin-bottom:16px}
 .product-img{width:100%;max-width:320px;margin:0 auto 20px;border-radius:16px;overflow:hidden}
 .product-img img{width:100%;height:auto;display:block}
-
 .hero h1{font-family:var(--font-d);font-size:clamp(32px,8vw,48px);font-weight:600;line-height:1.15;margin-bottom:10px}
 .hero h1 em{font-style:italic;color:var(--gold)}
-.hero-sub{font-size:14px;color:var(--mid);font-weight:300;max-width:340px;margin:0 auto 20px;line-height:1.75}
+.hero-sub{font-size:14px;color:var(--mid);font-weight:300;max-width:340px;margin:0 auto 18px;line-height:1.75}
 
-/* ÍCONES DE BENEFÍCIO */
-.benefit-icons{
-  display:grid;grid-template-columns:repeat(4,1fr);
-  gap:8px;margin-bottom:24px;
-}
-.bi{
-  background:var(--white);border:1px solid var(--light);border-radius:10px;
-  padding:10px 6px;display:flex;flex-direction:column;align-items:center;gap:6px;
-}
-.bi-icon{font-size:20px;display:block}
+/* MICRO-PROVAS */
+.micro-proof{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.mp-item{display:flex;align-items:center;gap:5px;background:var(--white);border:1px solid var(--light);border-radius:20px;padding:6px 12px;font-size:11px;color:var(--mid);font-weight:400}
+.mp-item b{color:var(--black);font-weight:500}
+
+/* ÍCONES BENEFÍCIO */
+.benefit-icons{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:22px}
+.bi{background:var(--white);border:1px solid var(--light);border-radius:10px;padding:10px 6px;display:flex;flex-direction:column;align-items:center;gap:5px}
+.bi-icon{font-size:18px;display:block}
 .bi-title{font-size:10px;font-weight:600;color:var(--black);text-align:center;line-height:1.3}
 .bi-sub{font-size:9px;color:var(--mid);text-align:center;line-height:1.3}
 
-/* CTA */
-.btn-main{
-  display:block;width:100%;max-width:380px;margin:0 auto;
-  background:var(--black);color:#fff;font-size:13px;font-weight:600;
-  letter-spacing:.08em;text-transform:uppercase;padding:17px 24px;
-  border-radius:6px;text-align:center;transition:opacity .15s;line-height:1.4;
-}
+/* BOTÕES */
+.btn-main{display:block;width:100%;max-width:380px;margin:0 auto;background:var(--black);color:#fff;font-size:13px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;padding:17px 24px;border-radius:6px;text-align:center;transition:opacity .15s;line-height:1.4}
 .btn-main:active{opacity:.82}
-.btn-main small{display:block;font-size:10px;opacity:.55;font-weight:400;letter-spacing:.04em;margin-top:3px;text-transform:none}
-.btn-gold{
-  display:block;width:100%;
-  background:var(--gold-btn);color:#fff;font-size:13px;font-weight:700;
-  letter-spacing:.08em;text-transform:uppercase;padding:16px 24px;
-  border-radius:6px;text-align:center;transition:opacity .15s;line-height:1.3;
-  box-shadow:0 4px 16px rgba(184,146,42,.3);
-}
+.btn-main small{display:block;font-size:10px;opacity:.55;font-weight:400;letter-spacing:.03em;margin-top:3px;text-transform:none}
+.btn-gold{display:block;width:100%;background:var(--gold-btn);color:#fff;font-size:13px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;padding:16px 24px;border-radius:6px;text-align:center;transition:opacity .15s;line-height:1.3;box-shadow:0 4px 16px rgba(184,146,42,.3)}
 .btn-gold:active{opacity:.85}
-.btn-outline{
-  display:block;width:100%;max-width:380px;margin:0 auto;
-  background:transparent;color:var(--black);font-size:13px;font-weight:500;
-  letter-spacing:.06em;text-transform:uppercase;padding:15px 24px;
-  border-radius:6px;border:1.5px solid var(--black);text-align:center;transition:opacity .15s;
-}
-
-/* SEGURANÇA ABAIXO DO CTA */
-.secure-line{
-  display:flex;justify-content:center;align-items:center;gap:6px;
-  font-size:11px;color:var(--mid);margin-top:10px;
-}
+.btn-outline{display:block;width:100%;max-width:380px;margin:0 auto;background:transparent;color:var(--black);font-size:13px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;padding:15px 24px;border-radius:6px;border:1.5px solid var(--black);text-align:center;transition:opacity .15s}
+.secure-line{display:flex;justify-content:center;align-items:center;gap:6px;font-size:11px;color:var(--mid);margin-top:10px}
 .hero-trust{display:flex;justify-content:center;align-items:center;gap:16px;flex-wrap:wrap;margin-top:10px}
 .ht-item{font-size:10.5px;color:var(--mid);display:flex;align-items:center;gap:4px}
-.delivery-note{
-  display:inline-flex;align-items:center;gap:6px;
-  background:var(--gold-bg);border:1px solid rgba(184,146,42,.2);
-  color:var(--gold);font-size:11px;font-weight:500;
-  padding:6px 14px;border-radius:20px;margin-top:14px;
-}
+.delivery-note{display:inline-flex;align-items:center;gap:6px;background:var(--gold-bg);border:1px solid rgba(184,146,42,.2);color:var(--gold);font-size:11px;font-weight:500;padding:6px 14px;border-radius:20px;margin-top:14px}
 
-/* ── DIVIDER ── */
+/* DIVIDER */
 .divider{height:1px;background:var(--light);margin:0 auto;max-width:calc(var(--max) - 48px)}
 
-/* ── SEÇÃO ── */
+/* SEÇÃO */
 .section{padding:40px 24px;max-width:var(--max);margin:0 auto}
 .section-label{font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:10px}
 .section-title{font-family:var(--font-d);font-size:clamp(24px,6vw,36px);font-weight:600;line-height:1.25;margin-bottom:8px}
 .section-title em{font-style:italic;color:var(--gold)}
 .section-body{font-size:14px;color:var(--mid);font-weight:300;line-height:1.75;margin-bottom:22px}
 
-/* ── PROVA SOCIAL ── */
-.social-title{
-  text-align:center;font-size:11px;font-weight:600;letter-spacing:.18em;
-  text-transform:uppercase;color:var(--black);margin-bottom:20px;
-  display:flex;align-items:center;justify-content:center;gap:8px;
-}
-
-/* ── ANTES/DEPOIS ── */
+/* ANTES/DEPOIS */
+.social-title{text-align:center;font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--black);margin-bottom:20px}
 .ad-img{width:100%;border-radius:12px;overflow:hidden;margin-bottom:8px}
 .ad-img img{width:100%;height:auto;display:block;border-radius:12px}
 .ad-disclaimer{font-size:10px;color:var(--mid);font-style:italic;text-align:center;margin-bottom:14px;line-height:1.5}
 .ad-caption{background:var(--green-bg);border:1px solid rgba(26,122,74,.15);border-radius:8px;padding:11px 16px;font-size:12.5px;color:var(--green);line-height:1.6;text-align:center;margin-bottom:20px}
-
-/* VÍDEOS */
 .vid-main{width:100%;border-radius:12px;overflow:hidden;background:#000;margin-bottom:6px}
 .vid-main video{width:100%;display:block;border-radius:12px;max-height:520px;object-fit:cover}
 .vid-caption{font-size:10.5px;color:var(--mid);text-align:center;margin-bottom:12px;font-style:italic}
@@ -188,19 +128,19 @@ button{cursor:pointer;border:none;background:none;font-family:var(--font-b)}
 .vid-s video{width:100%;display:block;border-radius:10px;max-height:220px;object-fit:cover}
 .vid-legal{font-size:9.5px;color:var(--mid);text-align:center;margin-top:8px;font-style:italic}
 
-/* ── TONALIDADES ── */
+/* TONALIDADES */
 .ton-img{width:100%;border-radius:12px;overflow:hidden;margin-bottom:12px}
 .ton-img img{width:100%;height:auto;display:block;border-radius:12px}
 .ton-note{font-size:12.5px;color:var(--mid);font-weight:300;line-height:1.65;text-align:center}
 
-/* ── FEATURES ── */
+/* FEATURES */
 .features{display:flex;flex-direction:column;gap:16px}
 .feature{display:flex;gap:14px;align-items:flex-start}
 .feature-icon{width:40px;height:40px;background:var(--white);border:1px solid var(--light);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
 .feature-text h3{font-size:14px;font-weight:500;margin-bottom:3px}
 .feature-text p{font-size:13px;color:var(--mid);font-weight:300;line-height:1.6}
 
-/* ── COMO USAR ── */
+/* COMO USAR */
 .steps{display:flex;flex-direction:column}
 .step{display:flex;gap:14px;padding:15px 0;border-bottom:1px solid var(--light);align-items:flex-start}
 .step:last-child{border-bottom:none}
@@ -208,81 +148,51 @@ button{cursor:pointer;border:none;background:none;font-family:var(--font-b)}
 .step h3{font-size:14px;font-weight:500;margin-bottom:2px}
 .step p{font-size:13px;color:var(--mid);font-weight:300;line-height:1.6}
 
-/* ── KITS — estilo da referência ── */
+/* KITS */
 .kits-section{padding:40px 20px;max-width:var(--max);margin:0 auto}
 .kits-header{text-align:center;margin-bottom:24px}
 .kits-header .kits-label{font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:6px}
 .kits-header h2{font-family:var(--font-d);font-size:clamp(22px,6vw,32px);font-weight:600}
 .kits-header h2 em{font-style:italic;color:var(--gold)}
-
 .kits-grid{display:flex;flex-direction:column;gap:14px}
 
-.kit-card{
-  background:var(--cream);border:2px solid var(--light);
-  border-radius:14px;padding:24px 20px;position:relative;
-  display:flex;flex-direction:column;align-items:center;text-align:center;
-}
-.kit-card.featured{
-  background:var(--white);border-color:var(--gold);
-  box-shadow:0 4px 24px rgba(184,146,42,.12);
-}
-
-/* BANNER "MAIS VENDIDO" */
-.kit-banner{
-  position:absolute;top:-1px;left:50%;transform:translateX(-50%);
-  background:linear-gradient(135deg,#b8922a,#e0b84a);
-  color:#fff;font-size:9.5px;font-weight:700;letter-spacing:.12em;
-  text-transform:uppercase;padding:5px 20px;border-radius:0 0 10px 10px;
-  white-space:nowrap;
-}
-
+.kit-card{background:var(--cream);border:2px solid var(--light);border-radius:14px;padding:24px 20px;position:relative;display:flex;flex-direction:column;align-items:center;text-align:center}
+.kit-card.featured{background:var(--white);border-color:var(--gold);box-shadow:0 4px 24px rgba(184,146,42,.12)}
+.kit-banner{position:absolute;top:-1px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#b8922a,#e0b84a);color:#fff;font-size:9.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:5px 20px;border-radius:0 0 10px 10px;white-space:nowrap}
 .kit-qty-label{font-size:11px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--mid);margin-bottom:4px;margin-top:8px}
-.kit-title{font-family:var(--font-d);font-size:22px;font-weight:600;margin-bottom:4px}
-.kit-desc{font-size:12px;color:var(--mid);font-weight:300;margin-bottom:16px}
-
-/* IMAGEM DO KIT */
-.kit-product-img{
-  width:100%;max-width:180px;margin:0 auto 16px;
-}
+.kit-title{font-family:var(--font-d);font-size:20px;font-weight:600;margin-bottom:4px}
+.kit-product-img{width:100%;max-width:180px;margin:0 auto 14px}
 .kit-product-img img{width:100%;height:auto;display:block}
-
-/* PREÇO */
 .kit-price-old{font-size:12px;color:var(--mid);margin-bottom:2px}
-.kit-price-old s{letter-spacing:.02em}
-.kit-price-main{font-family:var(--font-d);font-size:38px;font-weight:600;color:var(--black);line-height:1;margin-bottom:16px}
+.kit-price-main{font-family:var(--font-d);font-size:38px;font-weight:600;color:var(--black);line-height:1;margin-bottom:8px}
 .kit-card.featured .kit-price-main{color:var(--gold)}
 .kit-price-main sup{font-size:18px;font-weight:400;vertical-align:super;margin-right:2px}
 .kit-price-main sub{font-size:18px;font-weight:400;vertical-align:baseline}
 
-/* BOTÃO DO KIT */
-.kit-cta{
-  width:100%;padding:15px;border-radius:6px;font-size:12px;font-weight:700;
-  letter-spacing:.1em;text-transform:uppercase;text-align:center;
-  transition:opacity .15s;display:block;margin-bottom:10px;
-}
+/* ECONOMIA — novo */
+.kit-economy{display:inline-flex;align-items:center;gap:5px;background:var(--green-bg);border:1px solid rgba(26,122,74,.2);color:var(--green);font-size:11px;font-weight:600;padding:5px 12px;border-radius:20px;margin-bottom:14px}
+.kit-per-un{font-size:10.5px;color:var(--mid);margin-bottom:14px}
+
+.kit-cta{width:100%;padding:15px;border-radius:6px;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;text-align:center;transition:opacity .15s;display:block;margin-bottom:10px}
 .kit-card:not(.featured) .kit-cta{background:var(--black);color:#fff}
 .kit-card.featured .kit-cta{background:var(--gold-btn);color:#fff;box-shadow:0 4px 14px rgba(184,146,42,.35)}
 .kit-cta:active{opacity:.82}
+.kit-entrega{display:flex;align-items:center;justify-content:center;gap:5px;font-size:10.5px;color:var(--mid);font-weight:500}
 
-.kit-entrega{
-  display:flex;align-items:center;justify-content:center;gap:5px;
-  font-size:10.5px;color:var(--mid);font-weight:500;
-}
-
-/* ── GARANTIA ── */
+/* GARANTIA */
 .garantia-box{background:var(--white);border:1px solid var(--light);border-radius:10px;padding:24px;text-align:center}
 .garantia-icon{font-size:36px;margin-bottom:12px;display:block}
 .garantia-box h3{font-family:var(--font-d);font-size:22px;font-weight:600;margin-bottom:10px}
 .garantia-box p{font-size:13px;color:var(--mid);font-weight:300;line-height:1.75;margin-bottom:8px}
 .garantia-box .legal-note{font-size:10px;color:rgba(107,104,96,.65);font-style:italic;border-top:1px solid var(--light);padding-top:10px;margin-top:6px;line-height:1.65}
 
-/* ── ENTREGA ── */
+/* ENTREGA */
 .delivery-box{background:var(--white);border:1px solid var(--light);border-radius:10px;padding:24px}
 .delivery-box h3{font-family:var(--font-d);font-size:20px;font-weight:600;margin-bottom:10px}
 .delivery-box p{font-size:13px;color:var(--mid);font-weight:300;line-height:1.7;margin-bottom:12px}
 .check-link{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:500;border-bottom:1px solid var(--black);padding-bottom:1px}
 
-/* ── FAQ ── */
+/* FAQ */
 .faq{display:flex;flex-direction:column}
 .faq-item{border-bottom:1px solid var(--light)}
 .faq-item:first-child{border-top:1px solid var(--light)}
@@ -292,33 +202,27 @@ button{cursor:pointer;border:none;background:none;font-family:var(--font-b)}
 .faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s ease;font-size:13px;color:var(--mid);font-weight:300;line-height:1.75;padding:0}
 .faq-item.open .faq-a{max-height:220px;padding-bottom:16px}
 
-/* ── CTA FINAL ── */
+/* CTA FINAL */
 .final{padding:48px 24px 52px;max-width:var(--max);margin:0 auto;text-align:center}
 .final h2{font-family:var(--font-d);font-size:clamp(26px,7vw,38px);font-weight:600;line-height:1.25;margin-bottom:10px}
 .final h2 em{font-style:italic;color:var(--gold)}
 .final p{font-size:14px;color:var(--mid);font-weight:300;margin-bottom:28px;line-height:1.7}
 
-/* ── TRUST BADGES RODAPÉ ── */
-.trust-badges{
-  display:grid;grid-template-columns:repeat(2,1fr);gap:12px;
-  padding:0 24px 40px;max-width:var(--max);margin:0 auto;
-}
-.tb{
-  background:var(--white);border:1px solid var(--light);border-radius:10px;
-  padding:14px 12px;display:flex;align-items:center;gap:10px;
-}
+/* TRUST BADGES */
+.trust-badges{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;padding:0 24px 40px;max-width:var(--max);margin:0 auto}
+.tb{background:var(--white);border:1px solid var(--light);border-radius:10px;padding:14px 12px;display:flex;align-items:center;gap:10px}
 .tb-icon{font-size:22px;flex-shrink:0}
 .tb-text{font-size:11px;font-weight:500;color:var(--black);line-height:1.4}
 .tb-text span{display:block;font-size:10px;color:var(--mid);font-weight:300}
 
-/* ── FOOTER ── */
+/* FOOTER */
 footer{background:var(--black);padding:32px 24px;text-align:center}
 .footer-logo{font-family:var(--font-d);font-size:13px;font-weight:400;letter-spacing:.3em;color:rgba(255,255,255,.3);text-transform:uppercase;margin-bottom:12px}
 .footer-wa{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:rgba(255,255,255,.4);margin-bottom:16px}
 .footer-legal{font-size:9.5px;color:rgba(255,255,255,.18);line-height:1.85;max-width:440px;margin:0 auto;text-align:left}
 .footer-legal p{margin-bottom:5px}
 
-/* ── WA FLOAT ── */
+/* WA FLOAT */
 .wa-float{position:fixed;bottom:20px;right:20px;width:50px;height:50px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(37,211,102,.35);z-index:9999;transition:transform .2s}
 .wa-float:active{transform:scale(.93)}
 .wa-float svg{width:26px;height:26px;fill:#fff}
@@ -330,7 +234,7 @@ footer{background:var(--black);padding:32px 24px;text-align:center}
 </head>
 <body>
 
-<!-- TIMER COM LABELS -->
+<!-- TIMER -->
 <div class="timer-bar">
   <div class="timer-left"><span>⏱</span> OFERTA EXPIRA EM:</div>
   <div class="timer-digits">
@@ -353,110 +257,89 @@ footer{background:var(--black);padding:32px 24px;text-align:center}
   <div class="ss-item">💬 Suporte via <b>WhatsApp</b></div>
 </div>
 
-<!-- ═══ HERO ═══ -->
+<!-- HERO -->
 <section class="hero fade">
-
   <span class="hero-eyebrow">Base Cobre Tudo · Love Rain</span>
 
-  <!-- FOTO EDITORIAL PRINCIPAL -->
   <div class="product-img">
-    <img src="produto-editorial.png" alt="Base Cobre Tudo Love Rain — Base Mate longa duração resistente à água">
+    <img src="produto-editorial.webp" alt="Base Cobre Tudo Love Rain — Base Mate longa duração resistente à água" width="320" height="320">
   </div>
 
   <h1>Cobertura real.<br>Pele <em>uniforme.</em></h1>
   <p class="hero-sub">Alta cobertura com acabamento natural que uniformiza, ajuda a disfarçar imperfeições e valoriza sua beleza.</p>
 
-  <!-- 4 ÍCONES DE BENEFÍCIO -->
+  <!-- MICRO-PROVAS -->
+  <div class="micro-proof">
+    <span class="mp-item">✨ <b>Acabamento natural</b></span>
+    <span class="mp-item">💧 <b>Resistente à água</b></span>
+    <span class="mp-item">🪞 <b>Cobertura uniforme</b></span>
+    <span class="mp-item">⏳ <b>Longa duração</b></span>
+  </div>
+
+  <!-- 4 ÍCONES BENEFÍCIO -->
   <div class="benefit-icons">
-    <div class="bi">
-      <span class="bi-icon">✦</span>
-      <span class="bi-title">Alta cobertura</span>
-      <span class="bi-sub">Disfarça manchas e imperfeições</span>
-    </div>
-    <div class="bi">
-      <span class="bi-icon">◎</span>
-      <span class="bi-title">Acabamento natural</span>
-      <span class="bi-sub">Pele uniforme sem efeito pesado</span>
-    </div>
-    <div class="bi">
-      <span class="bi-icon">⏳</span>
-      <span class="bi-title">Longa duração</span>
-      <span class="bi-sub">Resistente ao suor e à água</span>
-    </div>
-    <div class="bi">
-      <span class="bi-icon">🌿</span>
-      <span class="bi-title">Textura leve</span>
-      <span class="bi-sub">Confortável e fácil de aplicar</span>
-    </div>
+    <div class="bi"><span class="bi-icon">✦</span><span class="bi-title">Alta cobertura</span><span class="bi-sub">Disfarça manchas e imperfeições</span></div>
+    <div class="bi"><span class="bi-icon">◎</span><span class="bi-title">Acabamento natural</span><span class="bi-sub">Pele uniforme sem efeito pesado</span></div>
+    <div class="bi"><span class="bi-icon">⏳</span><span class="bi-title">Longa duração</span><span class="bi-sub">Resistente ao suor e à água</span></div>
+    <div class="bi"><span class="bi-icon">🌿</span><span class="bi-title">Textura leve</span><span class="bi-sub">Confortável e fácil de aplicar</span></div>
   </div>
 
   <a class="btn-main" href="https://entrega.logzz.com.br/pay/memdkodvm/2-por-179---todas-as-cores" onclick="co(2)">
-    Quero minha base agora
+    🪞 Quero minha cobertura perfeita
     <small>Kit duplo · R$179 · Pague só na entrega</small>
   </a>
 
   <p class="secure-line">🔒 Compra 100% segura e rastreada</p>
-
   <div class="hero-trust">
     <span class="ht-item">💰 Pague na entrega</span>
     <span class="ht-item">💳 PIX · Cartão</span>
     <span class="ht-item">🚚 Entrega rápida</span>
   </div>
-
-  <div class="delivery-note">
-    📍 Entregamos em cidades selecionadas de São Paulo
-  </div>
-
+  <div class="delivery-note">📍 Entregamos em cidades selecionadas de São Paulo</div>
 </section>
 
 <div class="divider"></div>
 
-<!-- ═══ ANTES E DEPOIS ═══ -->
+<!-- ANTES E DEPOIS -->
 <section class="section fade">
   <div class="social-title">QUEM USA, APROVA ♡</div>
-
   <div class="ad-img">
-    <img src="antes-depois.jpg" alt="Antes e depois — cliente usando Base Cobre Tudo Love Rain">
+    <img src="antes-depois.webp" alt="Antes e depois — cliente usando Base Cobre Tudo Love Rain" loading="lazy" width="460" height="320">
   </div>
   <p class="ad-disclaimer">* Resultado individual. Resultados podem variar de pessoa para pessoa. Imagem enviada pela própria cliente.</p>
-
-  <div class="ad-caption">
-    ✅ Manchas e melasma visualmente disfarçados com a Base Cobre Tudo Love Rain
-  </div>
+  <div class="ad-caption">✅ Manchas e melasma visualmente disfarçados com a Base Cobre Tudo Love Rain</div>
 
   <div class="vid-main">
-    <video src="video-3.mp4" controls playsinline preload="none" poster="produto-editorial.png"></video>
+    <video src="video-3.mp4" controls playsinline preload="none" poster="produto-editorial.webp"></video>
   </div>
   <p class="vid-caption">Aplicação ao vivo — veja o resultado em tempo real</p>
-
   <div class="vids-secondary">
-    <div class="vid-s"><video src="video-1.mp4" controls playsinline preload="none" poster="antes-depois.jpg"></video></div>
-    <div class="vid-s"><video src="video-2.mp4" controls playsinline preload="none" poster="produto-kit.jpg"></video></div>
+    <div class="vid-s"><video src="video-1.mp4" controls playsinline preload="none" poster="antes-depois.webp"></video></div>
+    <div class="vid-s"><video src="video-2.mp4" controls playsinline preload="none" poster="produto-hero.webp"></video></div>
   </div>
-  <p class="vid-legal">* Vídeos enviados por clientes reais. Resultados individuais podem variar.</p>
+  <p class="vid-legal">* Vídeos de clientes reais. Resultados individuais podem variar.</p>
 </section>
 
 <div class="divider"></div>
 
-<!-- ═══ TONALIDADES ═══ -->
+<!-- TONALIDADES -->
 <section class="section fade">
   <span class="section-label">Tonalidades</span>
   <h2 class="section-title" style="margin-bottom:16px">6 tons para <em>toda pele</em></h2>
   <div class="ton-img">
-    <img src="tonalidades.jpg" alt="6 tonalidades — 01 Muito Clara ao 06 Morena Escura">
+    <img src="tonalidades.webp" alt="6 tonalidades — 01 Muito Clara ao 06 Morena Escura" loading="lazy" width="460" height="460">
   </div>
   <p class="ton-note">Você escolhe sua tonalidade no checkout antes de finalizar. 6 opções do tom 01 ao 06.</p>
 </section>
 
 <div class="divider"></div>
 
-<!-- ═══ KITS — estilo da referência ═══ -->
+<!-- KITS -->
 <section class="kits-section fade" id="kits">
   <div class="kits-header">
     <span class="kits-label">Escolha seu kit e economize 🎁</span>
     <h2>Kits e <em>preços</em></h2>
   </div>
-
   <div class="kits-grid">
 
     <!-- KIT 1 -->
@@ -464,12 +347,10 @@ footer{background:var(--black);padding:32px 24px;text-align:center}
       <div class="kit-qty-label">1 Unidade</div>
       <div class="kit-title">Para testar</div>
       <div class="kit-product-img">
-        <img src="produto-editorial.png" alt="1 unidade Base Cobre Tudo">
+        <img src="produto-editorial.webp" alt="1 unidade Base Cobre Tudo" loading="lazy">
       </div>
       <div class="kit-price-main"><sup>R$</sup>97<sub>,00</sub></div>
-      <a class="kit-cta" href="https://entrega.logzz.com.br/pay/memdkodvm/1-por-97---todas-as-cores" onclick="co(1)">
-        Quero 1 Unidade
-      </a>
+      <a class="kit-cta" href="https://entrega.logzz.com.br/pay/memdkodvm/1-por-97---todas-as-cores" onclick="co(1)">✨ Escolher meu kit</a>
       <div class="kit-entrega">🚚 Pague só na entrega</div>
     </div>
 
@@ -479,13 +360,12 @@ footer{background:var(--black);padding:32px 24px;text-align:center}
       <div class="kit-qty-label" style="margin-top:24px">2 Unidades</div>
       <div class="kit-title">Para você que ama!</div>
       <div class="kit-product-img" style="max-width:220px">
-        <img src="kit-2un.png" alt="2 unidades Base Cobre Tudo Love Rain">
+        <img src="kit-2un.webp" alt="2 unidades Base Cobre Tudo" loading="lazy">
       </div>
       <div class="kit-price-old"><s>DE R$ 194,00</s></div>
       <div class="kit-price-main"><sup>R$</sup>179<sub>,00</sub></div>
-      <a class="kit-cta btn-gold" href="https://entrega.logzz.com.br/pay/memdkodvm/2-por-179---todas-as-cores" onclick="co(2)">
-        Quero 2 Unidades
-      </a>
+      <div class="kit-economy">🟢 Economize R$15 · R$89,50/un</div>
+      <a class="kit-cta btn-gold" href="https://entrega.logzz.com.br/pay/memdkodvm/2-por-179---todas-as-cores" onclick="co(2)">✨ Escolher meu kit</a>
       <div class="kit-entrega">🚚 Pague só na entrega</div>
     </div>
 
@@ -494,13 +374,12 @@ footer{background:var(--black);padding:32px 24px;text-align:center}
       <div class="kit-qty-label">3 Unidades</div>
       <div class="kit-title">Melhor custo-benefício</div>
       <div class="kit-product-img" style="max-width:240px">
-        <img src="kit-3un.png" alt="3 unidades Base Cobre Tudo Love Rain">
+        <img src="kit-3un.webp" alt="3 unidades Base Cobre Tudo" loading="lazy">
       </div>
       <div class="kit-price-old"><s>DE R$ 291,00</s></div>
       <div class="kit-price-main"><sup>R$</sup>229<sub>,00</sub></div>
-      <a class="kit-cta" href="https://entrega.logzz.com.br/pay/memdkodvm/3-por-229---todas-as-cores" onclick="co(3)">
-        Quero 3 Unidades
-      </a>
+      <div class="kit-economy">🟢 Economize R$62 · R$76/un</div>
+      <a class="kit-cta" href="https://entrega.logzz.com.br/pay/memdkodvm/3-por-229---todas-as-cores" onclick="co(3)">✨ Escolher meu kit</a>
       <div class="kit-entrega">🚚 Pague só na entrega</div>
     </div>
 
@@ -509,33 +388,21 @@ footer{background:var(--black);padding:32px 24px;text-align:center}
 
 <div class="divider"></div>
 
-<!-- ═══ BENEFÍCIOS ═══ -->
+<!-- BENEFÍCIOS -->
 <section class="section fade">
   <span class="section-label">O produto</span>
   <h2 class="section-title" style="margin-bottom:22px">O que você <em>ganha</em></h2>
   <div class="features">
-    <div class="feature">
-      <div class="feature-icon">✦</div>
-      <div class="feature-text"><h3>Alta cobertura</h3><p>Ajuda a disfarçar manchas, melasma, olheiras e imperfeições com aparência natural.</p></div>
-    </div>
-    <div class="feature">
-      <div class="feature-icon">💧</div>
-      <div class="feature-text"><h3>Resistente à água e suor</h3><p>Boa durabilidade para aguentar o dia — calor, trabalho, rotina intensa.</p></div>
-    </div>
-    <div class="feature">
-      <div class="feature-icon">◎</div>
-      <div class="feature-text"><h3>Acabamento natural</h3><p>Pele com aparência uniforme e tratada, sem efeito de maquiagem pesada.</p></div>
-    </div>
-    <div class="feature">
-      <div class="feature-icon">💛</div>
-      <div class="feature-text"><h3>Rende muito</h3><p>Uma pequena quantidade já é suficiente para cobrir o rosto inteiro.</p></div>
-    </div>
+    <div class="feature"><div class="feature-icon">✦</div><div class="feature-text"><h3>Alta cobertura</h3><p>Ajuda a disfarçar manchas, melasma, olheiras e imperfeições com aparência natural.</p></div></div>
+    <div class="feature"><div class="feature-icon">💧</div><div class="feature-text"><h3>Resistente à água e suor</h3><p>Boa durabilidade para aguentar o dia — calor, trabalho, rotina intensa.</p></div></div>
+    <div class="feature"><div class="feature-icon">◎</div><div class="feature-text"><h3>Acabamento natural</h3><p>Pele com aparência uniforme e tratada, sem efeito de maquiagem pesada.</p></div></div>
+    <div class="feature"><div class="feature-icon">💛</div><div class="feature-text"><h3>Rende muito</h3><p>Uma pequena quantidade já é suficiente para cobrir o rosto inteiro.</p></div></div>
   </div>
 </section>
 
 <div class="divider"></div>
 
-<!-- ═══ COMO USAR ═══ -->
+<!-- COMO USAR -->
 <section class="section fade">
   <span class="section-label">Aplicação</span>
   <h2 class="section-title" style="margin-bottom:22px">Como <em>usar</em></h2>
@@ -549,25 +416,23 @@ footer{background:var(--black);padding:32px 24px;text-align:center}
 
 <div class="divider"></div>
 
-<!-- ═══ GARANTIA LEGAL ═══ -->
+<!-- GARANTIA -->
 <section class="section fade">
   <span class="section-label">Sua segurança</span>
   <h2 class="section-title" style="margin-bottom:16px">Compre com <em>tranquilidade</em></h2>
   <div class="garantia-box">
     <span class="garantia-icon">🛡️</span>
     <h3>Direito de arrependimento</h3>
-    <p>Conforme o Código de Defesa do Consumidor (Art. 49 da Lei 8.078/90), você tem direito de desistir da compra realizada à distância em até <strong>7 dias corridos</strong> após o recebimento.</p>
-    <p>Para exercer esse direito, entre em contato com nosso suporte via WhatsApp.</p>
-    <a href="https://wa.me/5519987128880" style="display:inline-flex;align-items:center;gap:7px;background:#25d366;color:#fff;font-size:13px;font-weight:500;padding:11px 20px;border-radius:6px;margin-top:6px">
-      💬 Falar com suporte
-    </a>
+    <p>Conforme o Código de Defesa do Consumidor (Art. 49 da Lei 8.078/90), você tem direito de desistir da compra em até <strong>7 dias corridos</strong> após o recebimento.</p>
+    <p>Entre em contato com nosso suporte via WhatsApp para exercer esse direito.</p>
+    <a href="https://wa.me/5519987128880" style="display:inline-flex;align-items:center;gap:7px;background:#25d366;color:#fff;font-size:13px;font-weight:500;padding:11px 20px;border-radius:6px;margin-top:6px">💬 Falar com suporte</a>
     <p class="legal-note">O direito de arrependimento aplica-se a compras realizadas fora do estabelecimento comercial, conforme o CDC. O produto deve ser devolvido em condições originais. Custos e condições de devolução seguem as regras da plataforma parceira Logzz.</p>
   </div>
 </section>
 
 <div class="divider"></div>
 
-<!-- ═══ ENTREGA ═══ -->
+<!-- ENTREGA -->
 <section class="section fade">
   <span class="section-label">Entrega</span>
   <h2 class="section-title" style="margin-bottom:16px">Onde <em>entregamos</em></h2>
@@ -581,81 +446,42 @@ footer{background:var(--black);padding:32px 24px;text-align:center}
 
 <div class="divider"></div>
 
-<!-- ═══ FAQ ═══ -->
+<!-- FAQ -->
 <section class="section fade">
   <span class="section-label">Dúvidas</span>
   <h2 class="section-title" style="margin-bottom:22px">Perguntas <em>frequentes</em></h2>
   <div class="faq">
-    <div class="faq-item">
-      <button class="faq-q" onclick="openFaq(this)">A base ajuda a cobrir melasma?<span class="faq-arrow">▾</span></button>
-      <div class="faq-a">Sim. Possui alta cobertura e ajuda a disfarçar visualmente melasma, manchas, olheiras e imperfeições. É um cosmético de cobertura — não é tratamento médico.</div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-q" onclick="openFaq(this)">A base é resistente à água?<span class="faq-arrow">▾</span></button>
-      <div class="faq-a">Sim, possui boa resistência à água e ao suor, ideal para o dia a dia.</div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-q" onclick="openFaq(this)">Quanto produto tem na embalagem?<span class="faq-arrow">▾</span></button>
-      <div class="faq-a">30ml por unidade. Uma pequena quantidade já é suficiente para cobrir o rosto inteiro — o produto rende bastante.</div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-q" onclick="openFaq(this)">Vem com pincel ou esponja?<span class="faq-arrow">▾</span></button>
-      <div class="faq-a">Não acompanha pincel nem esponja. Você pode aplicar com os dedos ou com uma esponja própria.</div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-q" onclick="openFaq(this)">Como escolho minha tonalidade?<span class="faq-arrow">▾</span></button>
-      <div class="faq-a">A tonalidade é escolhida no checkout antes de finalizar. São 6 opções: Muito Clara (01), Clara (02), Média Clara (03), Morena Clara (04), Morena (05) e Morena Escura (06).</div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-q" onclick="openFaq(this)">Pode causar reação na pele?<span class="faq-arrow">▾</span></button>
-      <div class="faq-a">É formulada para uso cosmético geral. Pessoas com pele muito sensível devem fazer teste em pequena área antes do uso completo. Em caso de dúvida, consulte um dermatologista.</div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-q" onclick="openFaq(this)">Como funciona o pagamento?<span class="faq-arrow">▾</span></button>
-      <div class="faq-a">Pagamento na entrega disponível nas regiões atendidas. PIX e cartão de crédito também aceitos no checkout da plataforma Logzz.</div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-q" onclick="openFaq(this)">Tenho direito de devolução?<span class="faq-arrow">▾</span></button>
-      <div class="faq-a">Sim. Conforme Art. 49 do CDC, você tem direito de arrependimento em até 7 dias corridos após o recebimento. Entre em contato via WhatsApp para exercer esse direito.</div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-q" onclick="openFaq(this)">Entregam na minha cidade?<span class="faq-arrow">▾</span></button>
-      <div class="faq-a">Entregamos em cidades selecionadas do estado de São Paulo. Acesse o checkout para verificar antes de finalizar qualquer pedido.</div>
-    </div>
+    <div class="faq-item"><button class="faq-q" onclick="openFaq(this)">A base ajuda a cobrir melasma?<span class="faq-arrow">▾</span></button><div class="faq-a">Sim. Possui alta cobertura e ajuda a disfarçar visualmente melasma, manchas, olheiras e imperfeições. É um cosmético de cobertura — não é tratamento médico.</div></div>
+    <div class="faq-item"><button class="faq-q" onclick="openFaq(this)">A base é resistente à água?<span class="faq-arrow">▾</span></button><div class="faq-a">Sim, possui boa resistência à água e ao suor, ideal para o dia a dia.</div></div>
+    <div class="faq-item"><button class="faq-q" onclick="openFaq(this)">Quanto produto tem na embalagem?<span class="faq-arrow">▾</span></button><div class="faq-a">30ml por unidade. Uma pequena quantidade já é suficiente para cobrir o rosto inteiro.</div></div>
+    <div class="faq-item"><button class="faq-q" onclick="openFaq(this)">Vem com pincel ou esponja?<span class="faq-arrow">▾</span></button><div class="faq-a">Não acompanha pincel nem esponja. Você pode aplicar com os dedos ou com uma esponja própria.</div></div>
+    <div class="faq-item"><button class="faq-q" onclick="openFaq(this)">Como escolho minha tonalidade?<span class="faq-arrow">▾</span></button><div class="faq-a">A tonalidade é escolhida no checkout antes de finalizar. São 6 opções: Muito Clara (01), Clara (02), Média Clara (03), Morena Clara (04), Morena (05) e Morena Escura (06).</div></div>
+    <div class="faq-item"><button class="faq-q" onclick="openFaq(this)">Pode causar reação na pele?<span class="faq-arrow">▾</span></button><div class="faq-a">É formulada para uso cosmético geral. Pessoas com pele muito sensível devem fazer teste em pequena área antes do uso. Em caso de dúvida, consulte um dermatologista.</div></div>
+    <div class="faq-item"><button class="faq-q" onclick="openFaq(this)">Como funciona o pagamento?<span class="faq-arrow">▾</span></button><div class="faq-a">Pagamento na entrega disponível nas regiões atendidas. PIX e cartão de crédito também aceitos no checkout da plataforma Logzz.</div></div>
+    <div class="faq-item"><button class="faq-q" onclick="openFaq(this)">Tenho direito de devolução?<span class="faq-arrow">▾</span></button><div class="faq-a">Sim. Conforme Art. 49 do CDC, você tem direito de arrependimento em até 7 dias corridos após o recebimento. Entre em contato via WhatsApp.</div></div>
+    <div class="faq-item"><button class="faq-q" onclick="openFaq(this)">Entregam na minha cidade?<span class="faq-arrow">▾</span></button><div class="faq-a">Entregamos em cidades selecionadas do estado de São Paulo. Acesse o checkout para verificar antes de finalizar qualquer pedido.</div></div>
   </div>
 </section>
 
 <div class="divider"></div>
 
-<!-- ═══ CTA FINAL ═══ -->
+<!-- CTA FINAL -->
 <section class="final fade">
   <h2>Sua rotina merece uma<br><em>cobertura melhor.</em></h2>
   <p>Escolha seu kit, confirme sua cidade e finalize em menos de 2 minutos. Pague só quando receber.</p>
   <a class="btn-main" style="margin-bottom:12px" href="https://entrega.logzz.com.br/pay/memdkodvm/2-por-179---todas-as-cores" onclick="co(2)">
-    Quero minha base agora
+    🪞 Quero minha cobertura perfeita
     <small>Kit duplo · R$179 · Pague só na entrega</small>
   </a>
   <a class="btn-outline" href="https://wa.me/5519987128880">Tirar dúvidas no WhatsApp</a>
 </section>
 
-<!-- ═══ TRUST BADGES ═══ -->
+<!-- TRUST BADGES -->
 <div class="trust-badges fade">
-  <div class="tb">
-    <span class="tb-icon">💰</span>
-    <div class="tb-text">Pague só na entrega<span>Sem risco para você</span></div>
-  </div>
-  <div class="tb">
-    <span class="tb-icon">🚚</span>
-    <div class="tb-text">Entrega rápida<span>Cidades selecionadas · SP</span></div>
-  </div>
-  <div class="tb">
-    <span class="tb-icon">📦</span>
-    <div class="tb-text">Rastreamento<span>Acompanhe seu pedido</span></div>
-  </div>
-  <div class="tb">
-    <span class="tb-icon">🛡️</span>
-    <div class="tb-text">7 dias CDC<span>Direito de arrependimento</span></div>
-  </div>
+  <div class="tb"><span class="tb-icon">💰</span><div class="tb-text">Pague só na entrega<span>Sem risco para você</span></div></div>
+  <div class="tb"><span class="tb-icon">🚚</span><div class="tb-text">Entrega rápida<span>Cidades selecionadas · SP</span></div></div>
+  <div class="tb"><span class="tb-icon">📦</span><div class="tb-text">Rastreamento<span>Acompanhe seu pedido</span></div></div>
+  <div class="tb"><span class="tb-icon">🛡️</span><div class="tb-text">7 dias CDC<span>Direito de arrependimento</span></div></div>
 </div>
 
 <!-- FOOTER -->
@@ -671,7 +497,6 @@ footer{background:var(--black);padding:32px 24px;text-align:center}
   </div>
 </footer>
 
-<!-- WA FLOAT -->
 <a class="wa-float" href="https://wa.me/5519987128880" aria-label="WhatsApp">
   <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
 </a>
